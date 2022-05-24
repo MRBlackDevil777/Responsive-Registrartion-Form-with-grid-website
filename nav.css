@@ -1,0 +1,97 @@
+nav{
+    background-color: rgb(219, 107, 107);
+    color: white;
+    height: 75px;
+    width: 100%;
+    line-height: 75px;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    padding: 0px 80px;
+}
+
+nav .logo{
+    float: left;
+}
+
+nav .logo p{
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+
+nav ul li a :hover{
+    color: rgb(5, 5, 5);
+}
+
+nav ul .active{
+    color: rgb(0, 0, 0);
+}
+
+.checkbtn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+
+.check{
+    display: none;
+    outline: none;
+}
+
+@media screen and (max-width:1200px) {
+    nav{
+    padding: 0px 50px;
+    margin-bottom: 30px;
+}
+.checkbtn{
+    display: block;
+}
+nav .logo p{
+    font-size: 30px;
+}
+
+.tab-content{
+    width: 100%;
+    max-height: 0;
+    background-color: rgba(255, 0, 212, 0.541);
+    overflow: hidden;
+    position: sticky;
+    text-align: center;
+    transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+}
+
+.nav-checkbox input:checked ~ .tab-content{
+    max-height: 400px;
+}
+
+nav ul li{
+    display: block;
+    margin: 30px 0px;
+    line-height: 20px;
+}
+
+}

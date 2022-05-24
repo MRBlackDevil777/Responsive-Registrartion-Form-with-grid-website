@@ -1,0 +1,80 @@
+* {
+    margin: auto;
+}
+
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat ;
+}
+
+                            /* (or) */
+
+/* body{
+    background: url(https://www.wallpaperflare.com/static/435/748/1004/ice-mountains-river-scenery-wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat ;
+} */
+
+h1{
+    background-color: rgb(129, 54, 214);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgb(117, 252, 76);
+    border-width: 3px 1px 3px 1px;
+}
+
+.form-control {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: rgb(255, 0, 0);
+    background-color: #ffffff;
+    font-weight: bold;
+    width: 380px;
+    margin: auto;
+    border: 3px solid rgb(117, 252, 76);
+}
+
+.form-group{
+    background-color: rgba(78, 71, 71, 0);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 480px;
+    height:max-content;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: groove ;
+    border-color: rgb(117, 252, 76);
+    border-width: 4px;
+}
+
+.h3{
+    margin: auto;
+}
+
+.btn{
+    margin: auto;
+    
+}
+
+.mt-5, .my-5 {
+    height: 70vh;
+}
+
+b{
+    color: #ffffff;
+    letter-spacing: .5px;
+    font-weight: normal;
+    font-size: large;
+}

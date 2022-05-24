@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="signin.css">
+
+</head>
+<body background="/ice-mountains-river-scenery-wallpaper.jpg">
+
+    <div class="text-center mt-5" >
+        <div class="error"></div>
+
+    <form onsubmit="return validate()" name="signinform" class="form-group" style= "margin: auto;" action="/homegrid.html" method="get">
+
+        <h1 style="max-width: 280px; max-height: 45px; margin: auto;" class="h3 mb-5">Sign-In</h1>
+
+            <label for="email" class="sr-only"></label>
+            <input type="email" id="email" class="form-control" placeholder="E-mail" required autofocus>
+
+            <label for="password"></label>
+            <input type="password" id="password" class="form-control" placeholder="Password"   autofocus>
+
+            <div class="b4-form-checkbox-custom mt-3">
+                <label>
+                    <input type="checkbox" value="remember-me"><b> Remember me</b>
+                </label>
+            </div>
+
+            <div class="mt-3">
+        <button style="border: 1px solid rgb(117, 252, 76) ;" type="submit" id="submit" class="btn btn-lg btn-primary btn-inline-block">Sign In</button>
+        </div>
+
+        <div class="mt-3">
+
+            <footer><button onclick="myFunction()" class=".btn2" style="color: rgb(255, 255, 255); background: none; border: none; font-weight: bold; font-size: large; border-radius: 10px; border-style: solid; border-color: rgb(117, 252, 76); border-width: 3px; background-color: rgba(0, 0, 0, 0.623); width: auto;">Don't have an account?<u>Sign-up</u></button></footer>
+        
+        </div>
+
+    </form>
+
+
+<script>
+    function validate() {
+        let Email =document.signinform.email.value;
+        let Password =document.signinform.password.value;
+
+        if(Email==null || Email==""){
+            alert("Email must be entered")
+            return false;
+        }
+        else if(Password==null || Password==""){
+            alert("Password must be entered")
+            return false;
+        }
+    }
+    function myFunction() {
+        location.replace("/Sign up/signup.html")
+        }
+</script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

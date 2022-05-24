@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Buypet.css">
+  </head>
+  <body background="/ice-mountains-river-scenery-wallpaper.jpg">
+
+    <div class="text-center mt-5" >
+        <div class="error"></div>
+
+    <form onsubmit="return validate()" name="buypet" class="form-group" style= "margin: auto;" action="/homegrid.html" method="get">
+
+        <h1 style="max-width: 280px; max-height: 45px; margin: auto;" class="h3 mb-5">Buy Pet</h1>
+
+            <label for="list" class="sr-only"></label>
+              <div class="multi-selector">
+        
+              <div class="select-field">
+              <input type="text" class="input-selector" placeholder="Choose your pet" style="font-weight: bold; border: none;" autofocus>&blacktriangledown;
+              <!-- <span class="down-arrow">&blacktriangledown;</span> -->
+              </div>
+              
+              <div class="list">
+              <label for="Husky" class="pet"> <input type="checkbox" name="" id="Husky"> Husky</label>
+              <label for="Labrador" class="pet"> <input type="checkbox" name="" id="Labrador"> Labrador</label>
+              <label for="Parrot" class="pet"> <input type="checkbox" name="" id="Parrot"> Parrot</label>
+              <label for="Lovebirds" class="pet"> <input type="checkbox" name="" id="Lovebirds"> Lovebirds</label>
+              <label for="Cockateils" class="pet"> <input type="checkbox" name="" id="Cockateils"> Cockateils</label>
+              <label for="Turkey" class="pet"> <input type="checkbox" name="" id="Turkey">Turkey</label>
+              <label for="Piegeon" class="pet"> <input type="checkbox" name="" id="Piegeon"> Piegeon</label>
+              <label for="German Shepard" class="pet"> <input type="checkbox" name="" id="German Shepard"> German Shepard</label>
+              <label for="Boxer" class="pet"> <input type="checkbox" name="" id="Boxer"> Boxer</label>
+              <label for="Pug" class="pet"> <input type="checkbox" name="" id="Pug"> Pug</label>
+              <label for="Shiba Inu" class="pet"> <input type="checkbox" name="" id="Shiba Inu"> Shiba Inu</label>
+              <label for="Bunny" class="pet"> <input type="checkbox" name="" id="Bunny"> Bunny</label>
+              <label for="Turtle" class="pet"> <input type="checkbox" name="" id="Turtle"> Turtle</label>
+              <label for="Guinea pigs" class="pet"> <input type="checkbox" name="" id="Guinea pigs"> Guinea pigs</label>
+              <label for="Turtle" class="pet"> <input type="checkbox" name="" id="Turtle"> Turtle</label>
+              </div>
+              </div>
+
+              <label for="address"></label>
+              <input type="text" id="address" class="form-control" placeholder="Address"   autofocus>
+
+              <label for="Mobile No"></label>
+              <input type="number" id="mobileno" class="form-control" placeholder="Mobile No"  autofocus>
+
+            <!-- <div class="b4-form-checkbox-custom mt-3">
+                <label>
+                    <input type="checkbox" value="remember-me"><b> Remember me</b>
+                </label>
+            </div> -->
+
+            <div class="mt-3">
+        <button onclick="submit" style="border: 1px solid rgb(117, 252, 76) ;" type="submit" id="submit" class="btn btn-lg btn-primary btn-inline-block">Place order</button>
+        </div>
+
+    </form>
+
+
+<script>
+    function validate() {
+        
+        let Address =document.signinform.address.value;
+        let MobilNO =document.signinform.mobileno.value;
+
+     if(Address==null || Address==""){
+            alert("Address must be entered")
+            return false;
+        }
+        else if(MobilNO==null || MobilNO==""){
+            alert("Mobile NO: must be entered")
+            return false;
+        }
+    }
+    document.querySelector('.select-field').addEventListener('click',()=>{
+        document.querySelector('.list').classList.toggle('show');
+        document.querySelector('.down-arrow').classList.toggle('rotate180');
+    })
+
+</script>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
